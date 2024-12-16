@@ -15,7 +15,7 @@
     <!--Header-->
     <div class="header">
         <div class="nav">
-            <div class="nav-start"><a href="homepage.html"><img src="../Asset/logo.png" alt="logo" width="239" height="62"></div></a>
+            <div class="nav-start"><a href="booking.html"><img src="../Asset/logo.png" alt="logo" width="239" height="62"></div></a>
             <div class="nav-end">
                 <div class="lang">English</div>
                 <select name="lang" id="lang" role="combobox">
@@ -27,7 +27,7 @@
                     <a class="menu-end" style="padding: 0;" href="login.html"><i class="fa-solid fa-user"></i><span>Login</span></a>/
                     <a class="menu-end" style="padding: 0;"><span>Register</span></a>
                 </div>
-                <a class="menu-end" href="index.html">Home Page</a>
+                <a class="menu-end" href="booking.html">Home Page</a>
             </div>
         </div>
         <div class="head">
@@ -84,6 +84,90 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+        </div>
+        <div class="container">
+            <div class="tabs">
+                <div class="tab active"><a href="booking.html" >Book Ticket</a></div>
+                <div class="tab"><a href="#">Manage Reservation</a></div>
+                <div class="tab"><a href="#">Ticket Inquiery</a></div>
+            </div>
+            <div class="form-container">
+                <form>
+                    <div class="trip-type">
+                        <label><input type="radio" name="trip" value="oneway" checked> Oneway</label>
+                        <label><input type="radio" name="trip" value="return"> Return</label>
+                    </div>
+                    <div class="row">
+                        <div class="from-to">
+                            <label >From</label>
+                            <select>
+                                <option>Please Choose</option>
+                                <option>Phnom Penh</option>
+                                <option>Siem Reap</option>
+                                <option>Bangkok</option>
+                            </select>
+                            <div class="arrow"></div>
+                            <label >To</label>
+                            <select>
+                                <option>Please Choose</option>
+                                <option>Phnom Penh</option>
+                                <option>Siem Reap</option>
+                                <option>Bangkok</option>
+                            </select>
+                        </div>
+                        <div class="leave-back">
+                            <label >Leave</label>
+                            <input type="date"  id="date">
+                            <div class="line"></div>
+                            <label >Back</label>
+                            <input type="date"  id="back-date" disabled>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cabin-class">
+                            <label>Cabin Class</label>
+                            <select>
+                                <option>Economy Class</option>
+                                <option>Business Class</option>
+                            </select>
+                        </div>
+                        <div class="adult-chlid-infant">
+                            <label>Aldult</label>
+                            <input type="number" id="inputnum" value="0">
+                            <label >Child</label>
+                            <input type="number" id="inputnum" value="0">
+                            <label >infant</label>
+                            <input type="number" id="inputnum" value="0">
+                        </div>
+                        <button class="form-button">Book</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="poster one">
+            <h2>Popular Destination</h2>
+            <div class="inner-poster">
+                <div class="inner" id="i1"></div>
+                <div class="inner" id="i2"></div>
+                <div class="inner" id="i3"></div>
+            </div>
+        </div>
+        <div class="poster two">
+            <h2>Promotions</h2>
+            <div class="inner2">
+
+            </div>
+        </div>
+        <div class="poster three">
+            <h2>Fly with Cambodia Airways</h2>
+            <div class="inner3">
+
+            </div>
         </div>
         
        
@@ -156,6 +240,25 @@
     <div class="copyright">
         <p class="copy">Copyright <span class="symbol">&copy</span> Cambodia Airways</p>
     </div>
+    <script>
+       const dateinput=document.getElementById('date');
+       const tripRadios = document.querySelectorAll('input[name="trip"]');
+       const backdate=document.getElementById('back-date')
+
+       dateinput.addEventListener('click', () => dateinput.showPicker());
+       backdate.addEventListener('click', ()=>backdate.showPicker());
+       function toggleBackDate() {
+            const isReturnSelected = document.querySelector('input[name="trip"][value="return"]').checked;
+            backdate.disabled = !isReturnSelected;
+            if (!isReturnSelected) {
+            backdate.value = '';
+            }
+        }
+        tripRadios.forEach(radio => {
+            radio.addEventListener('change', toggleBackDate);
+        });
+        toggleBackDate();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
