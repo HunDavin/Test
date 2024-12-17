@@ -523,3 +523,30 @@ select{
     margin-left: 5px;
     font-size: 14px;
 }
+.ordernumber {
+    width: 40%;
+    height: 50px;
+    border: 1px solid rgba(75, 38, 38, 0.473);
+    border-radius: 8px;
+    display: flex;
+    padding: 10px 5px;
+}
+.passportID{
+    width: 40%;
+    height: 50px;
+    border: 1px solid rgba(75, 38, 38, 0.473);
+    border-radius: 8px;
+    display: flex;
+    padding: 10px 5px;
+}
+.search{
+    width:10%;
+    margin-left: 5%;
+    background-color: #204097;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+.search:hover{
+    background-color: rgba(32, 64, 151, 0.897) ;
+}

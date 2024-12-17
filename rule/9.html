@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CambodiaAirways</title>
+    <link rel="icon" href="../Asset/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/home.css">
+    <link rel="stylesheet" href="../Css/question.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="nav">
+            <div class="nav-start"><a href="../booking.html"><img src="../Asset/logo.png" alt="logo" width="239" height="62"></div></a>
+            <div class="nav-end">
+                <div class="lang">English</div>
+                <select name="lang" id="lang" role="combobox">
+                    <option value="EN">English</option>
+                    <option value="CN">中文</option>
+                    <option value="KH">ភាសាខ្មែរ</option>
+                </select>
+                <div class="login-register">
+                    <a class="menu-end" style="padding: 0;" href="../login.html"><i class="fa-solid fa-user"></i><span>Login</span></a>/
+                    <a class="menu-end" style="padding: 0;" href="../register.html"><span>Register</span></a>
+                </div>
+                <a class="menu-end" href="../booking.html">Home Page</a>
+            </div>
+        </div>
+        <div class="head">
+            <div class="head-start">
+                <div class="contrast">NEWS:</div>
+                <span class="news">Cambodia e-Arrival (CeA) launches for air passengers on September 1, 2024</span>
+            </div>
+            <div class="head-end">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-chevron-down"></i>  Common Question
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="1.html">Check in guide</a>
+                        <a href="#">Fare rules</a>
+                        <a href="3.html">Checked Baggage</a>
+                        <a href="4.html">Carry on baggage</a>
+                        <a href="5.html">Connection Traffic MCT Notice</a>
+                        <a href="6.html">Agency Debit Memos Policy</a>
+                        <a href="7.html">Expectant Mothers Policy</a>
+                        <a href="8.html">Special Baggage</a>
+                        <a href="9.html">Preferred Seats & Seats Upgrade</a>
+                        <a href="10.html">KR PASS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Content-->
+    <div class="main">
+        <div class="check-in">
+            <div class="paragraph">
+                <img src="https://www.cambodia-airways.com/image/20240820173151119_Policy%20Details%20on%20%20Seat%20Selection%20Fee%20for%20Cambodia%20Airways-images-0-min.jpg" alt="" class="img-fluid" style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+   
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="upper">
+                <div class="logo-section">
+                    <img src="../Asset/footer_logo.png" alt="Cambodia Airways Logo">
+                </div>
+                <div class="vl" >
+
+                </div>
+                <div class="links">
+                    <div>
+                        <h3>About Us</h3>
+                        <a href="#">Our Story</a>
+                        <a href="#">News Room</a>
+                        <a href="#">General Conditions of Carriage</a>
+                    </div>
+                    <div>
+                        <h3>Destination</h3>
+                        <a href="#">Macau</a>
+                        <a href="#">Siem Reap</a>
+                        <a href="#">Fuzhou</a>
+                        <a href="#">Bangkok</a>
+                    </div>
+                    <div>
+                        <h3>Need Help</h3>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div>
+                        <h3>Contact Us</h3>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Travel agent contact info</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower">
+                <div class="mobile-app">
+                    <h3>Mobile App</h3>
+                    <a href="#"><img src="../Asset/app-store-badge.png" alt="Download on the App Store"></a>
+                    <a href="#"><img src="../Asset/google-play-badge.png" alt="Get it on Google Play"></a>
+                </div>
+                <div class="social-and-payment">
+                    <div class="social-icons">
+                        <a href="#"><img src="../Asset/Facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="../Asset/telegram.jpg" alt="Telegram"></a>
+                        <a href="#"><img src="../Asset/Instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="../Asset/x.png" alt="Twitter"></a>
+                    </div>
+                    <div class="payment-methods">
+                        <p>We accept:</p>
+                        <img src="../Asset/khqr.png" alt="KHQR">
+                        <img src="../Asset/visa.jpg" alt="Visa">
+                        <img src="../Asset/mastercard.jpg" alt="MasterCard">
+                        <img src="../Asset/union pay.jpg" alt="UnionPay">
+                        <img src="../Asset/jcb.jpg" alt="JCB">
+                        <img src="../Asset/wechatpay.jpg" alt="WeChat Pay">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+       
+    </footer>
+    <div class="copyright">
+        <p class="copy">Copyright <span class="symbol">&copy</span> Cambodia Airways</p>
+    </div>
+    <script>
+       const dateinput=document.getElementById('date');
+       const tripRadios = document.querySelectorAll('input[name="trip"]');
+       const backdate=document.getElementById('back-date')
+
+       dateinput.addEventListener('click', () => dateinput.showPicker());
+       backdate.addEventListener('click', ()=>backdate.showPicker());
+       function toggleBackDate() {
+            const isReturnSelected = document.querySelector('input[name="trip"][value="return"]').checked;
+            backdate.disabled = !isReturnSelected;
+            if (!isReturnSelected) {
+            backdate.value = '';
+            }
+        }
+        tripRadios.forEach(radio => {
+            radio.addEventListener('change', toggleBackDate);
+        });
+        toggleBackDate();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

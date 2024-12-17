@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambodia Airway</title>
+    <link rel="icon" href="https://cdn.theorg.com/3e71fabf-9b3c-49fb-b247-0d8583a9a70e_medium.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <script>
+        function checkScreenWidth() {
+            // Check if the screen width is smaller or equal to 700px
+            if (window.matchMedia("(max-width: 700px)").matches) {
+                // Redirect to mobile version if on desktop
+                if (!window.location.href.includes("Mobile_Mode")) {
+                    window.location.href = "./Mobile_Mode/1.Home-Page/index.html";
+                }
+            } else {
+                // Redirect to desktop version if on mobile
+                if (window.location.href.includes("Mobile_Mode")) {
+                    window.location.href = "../../booking.html";
+                }
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", checkScreenWidth);
+
+        // Add an event listener for window resizing
+        window.addEventListener("resize", checkScreenWidth);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-container">
+            <div class="logo-text">
+                <img src="./image/ca_logo_horizontal.png" alt="logo">
+                <h3>Welcome to Cambodia Airways</h3>
+            </div>
+            <a href="../9.Message-Page/index.html"><i class="fa-regular fa-message icon-message"></i></a>
+        </nav>
+        <main class="pic-container">
+            <div class="img-container"><img src="./image/20241206111559997_APP EN.jpg" alt="pic" class="pic"></div>
+            <div class="img-container"><img src="./image/20241024101635898_EN-APP.jpg" alt="pic" class="pic"></div>
+            <div class="img-container"><img src="./image/20240610110019325_APP EN.jpg" alt="pic" class="pic"></div>
+            <div class="img-container"><img src="./image/20240422183630837_英文1065x690 (2).jpg.bmp" alt="pic" class="pic"></div>
+            <div class="img-container"><img src="./image/20240118120059845_图片_20240118105901.png" alt="pic" class="pic"></div>
+            <div class="img-container"><img src="./image/20230726122558621_EN+BC+flyer-APP.jpg" alt="pic" class="pic"></div>
+            <div class="img-container"><img src="./image/20230402160418488_BC app seagame.jpg" alt="pic" class="pic"></div>
+            <div class="img-container country">
+                <img src="./image/20200826204126_20190714162918NlnV_bkk 470x200pixel.jpg" alt="pic" class="pic">
+                <div class="dark-shadow"></div>
+                <div class="text-arrow">
+                    <p class="learn">Learn more</p>
+                    <div class="circle">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container country">
+                <img src="./image/20230313101258537_beijing  470x200pixel.jpg" alt="pic" class="pic">
+                <div class="dark-shadow"></div>
+                <div class="text-arrow">
+                    <p class="learn">Learn more</p>
+                    <div class="circle">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="img-container country">
+                <img src="./image/20230313111800634_sin 470x200pixel.jpg" alt="pic" class="pic">
+                <div class="dark-shadow"></div>
+                <div class="text-arrow">
+                    <p class="learn">Learn more</p>
+                    <div class="circle">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bottom-menu">
+        <div class="each-menu">
+            <img src="./image/ic_tab_home_selected.png" alt="icon" class="icon-menu">
+            <p>Promo</p>
+        </div>
+        <div class="each-menu">
+            <a href="../2.Book-Page/index.html"><img src="./image/ic_tab_book.png" alt="icon" class="icon-menu"></a>
+            <p>Book</p>
+        </div>
+        <div class="each-menu">
+            <a href="../3.Trip-Page/index.html"><img src="./image/ic_tab_order.png" alt="icon" class="icon-menu"></a>
+            <p>Trip</p>
+        </div>
+        <div class="each-menu">
+            <a href="../4.More-Page/index.html"><img src="./image/ic_tab_more.png" alt="icon" class="icon-menu"></a>
+            <p>More</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width:100vw;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 44px 1fr;
+}
+
+.nav-container {
+    height: 100%;
+    padding:0 20px;
+    background-color: #fff;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: 22px 1fr;
+    align-content: center;
+}
+
+.back-arrow {
+    color:rgb(0,0,128);
+    grid-column: 1/2;
+    font-size: 18px;
+}
+
+h3 {
+    color:#333;
+    font-size: 15px;
+    grid-column: 2/-1;
+    justify-self: center;
+    font-weight: lighter;
+}
+
+.policy-container {
+    padding: 30px;
+}
+
+h4 {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    margin:15px 0px;
+    line-height: 25px;
+}
+
+p::first-letter {
+    margin-left: 40px;
+}
+
+
+
+
+

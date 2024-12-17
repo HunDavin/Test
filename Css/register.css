@@ -1,0 +1,28 @@
+.register{
+    margin:auto;
+    width: 70%;
+}
+.register>*{
+    margin: 10px 0;
+}
+.reg-text{
+    padding: 10px 0;
+    font-weight: bolder;
+    color: #203f95;
+    margin: 10px 0;
+}
+.p1{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.basic-info{
+    width: 100%;
+    
+}
+.small-box{
+    width: 20%;
+    padding: 20px 2px;
+    border: 2px solid rgb(210, 199, 199);
+    border-radius: 4px;
+    display: flex;
+}

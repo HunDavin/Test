@@ -366,3 +366,21 @@ select {
   .form-footer a:hover {
     text-decoration: underline;
   }
+  .username{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .verify{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }

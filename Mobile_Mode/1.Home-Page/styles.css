@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    height:max-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding:20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+img[alt="logo"]{
+    width:135px;
+    height:37px;
+}
+
+h3 {
+    font-size: 11px;
+    color:#979caf;
+    text-align: center;
+}
+
+.icon-message {
+    font-size:24px;
+    color: #3d435d;
+}
+
+.pic-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-container {
+    width: 100%;
+    height: 230px;
+    margin-top:10px;
+}
+
+.pic {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img-container:nth-of-type(10){
+    margin-bottom: 70px;
+}
+
+.country {
+    position: relative;
+}
+
+.country > img {
+    object-position: center;
+}
+
+.dark-shadow {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom:0;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.8) 40%,rgba(0,0,0,0));
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.text-arrow{
+    cursor: pointer;
+    color: #fff;
+    width: 103px;
+    height: 26px;
+    position: absolute;
+    bottom:10px;
+    right:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learn {
+    font-size: 14px;
+}
+
+.circle {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle > i {
+    font-size: 12px;
+}
+.bottom-menu{
+    color:#eee;
+    background-color: rgb(2, 0, 130);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    border-bottom: 1px solid rgb(2, 0, 130);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.each-menu > a {
+    width: 24px;
+    height: 24px;
+}
+
+.each-menu {
+    width: 24px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-menu {
+    width: 24px;
+    height: 24px;
+}
+
+p {
+    font-size: 9px;
+}
